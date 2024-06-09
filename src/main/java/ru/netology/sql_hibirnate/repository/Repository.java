@@ -14,9 +14,9 @@ import java.util.Optional;
 public interface Repository extends JpaRepository<Person, CompositeKey> {
     List<Person> findByCityOfLiving(String cityOfLiving);
 
-    List<Person> findByAgeLessThanOrderByAge(Integer age);
+    List<Person> findByIdAgeLessThanOrderByIdAge(Integer age);
 
-    List<Person> findByNameAndSurnameLike(String name, String surname, Optional<Person> optional);
+    List<Person> findByIdNameAndIdSurnameLike(String name, String surname);
 
 //    @PersistenceContext
 //    private EntityManager entityManager;
