@@ -31,8 +31,6 @@ public class Controller {
         return repository.findById(compositeKey).orElse(null);
     }
 
-    
-
     @GetMapping("/by-city")
     public List<Person> getPersonsByCity(String city){
         List<?> persons = repository.findByCityOfLiving(city);

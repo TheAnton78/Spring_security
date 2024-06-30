@@ -1,3 +1,7 @@
+GET http://localhost:8053/persons/by-id?name=Василий&surname=Петров&age=23
+Accept: application/json
+
+###
 GET http://localhost:8050/persons/by-city?city=MOSCOW
 Accept: application/json
 
