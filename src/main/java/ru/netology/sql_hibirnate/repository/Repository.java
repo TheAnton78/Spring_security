@@ -18,6 +18,8 @@ public interface Repository extends JpaRepository<Person, CompositeKey> {
 
     List<Person> findByIdNameAndIdSurnameLike(String name, String surname);
 
+    List<Person> findByIdName(String name);
+
 //    @PersistenceContext
 //    private EntityManager entityManager;
 //
